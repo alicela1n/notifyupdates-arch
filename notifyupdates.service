@@ -1,0 +1,8 @@
+[Unit]
+Description=Send a notification if there's updates every hour and on boot
+RefuseManualStart=no
+RefuseManualStop=yes
+ 
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notifyupdates

@@ -1,0 +1,9 @@
+[Unit]
+Description=Send a notification if there's updates every hour and on boot
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
